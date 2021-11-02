@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/katrindieter/Software-testing#readme",
   "devDependencies": {
+    "coveralls": "^3.1.1",
     "jest": "^27.3.1"
   }
 }
