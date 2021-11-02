@@ -10,7 +10,7 @@
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "test:staged": "jest --findRelatedTests",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls --verbose"
+    "coveralls": "cross-env COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN jest --coverage && cat ./coverage/lcov.info | coveralls --verbose"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,11 @@
   },
   "homepage": "https://github.com/katrindieter/Software-testing#readme",
   "devDependencies": {
-    "coveralls": "^3.1.1",
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "babel-jest": "*",
-    "jest": "^27.3.1"
+    "coveralls": "^3.1.1",
+    "jest": "^27.3.1",
+    "cross-env": "^7.0.3"
   }
 }
