@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test:staged": "jest --findRelatedTests"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/katrindieter/Software-testing/issues"
   },
-  "homepage": "https://github.com/katrindieter/Software-testing#readme"
+  "homepage": "https://github.com/katrindieter/Software-testing#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
