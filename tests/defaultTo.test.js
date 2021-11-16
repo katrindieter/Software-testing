@@ -1,7 +1,7 @@
 import defaultTo from '../src/defaultTo'
 
 /**
- * Tests the of defaultTo(value, defaultValue) function.
+ * Tests the defaultTo(value, defaultValue) function.
  */
 
 test('Expected return value 1', () => {
@@ -17,7 +17,7 @@ test('Expected return value 0', () => {
 });
 
 /**
- * Tämä palauttaa NaN
+ * This returns NaN
  */
 test('Expected return value 10', () => {
     expect(defaultTo(NaN, 10)).toBe(10);

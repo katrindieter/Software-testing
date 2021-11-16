@@ -1,7 +1,7 @@
 import endsWith from '../src/endsWith'
 
 /**
- * Tests the of endsWith(string, target, position) function.
+ * Tests the endsWith(string, target, position) function.
  */
 
 test('Expected return value "true"', () => {

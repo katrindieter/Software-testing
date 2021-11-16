@@ -1,7 +1,7 @@
 import get from '../src/get'
 
 /**
- * Tests the of get(object, path, defaultValue) function.
+ * Tests the get(object, path, defaultValue) function.
  * 
  */
 

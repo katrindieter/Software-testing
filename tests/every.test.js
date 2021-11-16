@@ -2,7 +2,7 @@ import every from '../src/every'
 
 
 /**
- * Tests the of every(array, predicate) function.
+ * Tests the every(array, predicate) function.
  */
 
 test('Expected return value "false"', () => {
