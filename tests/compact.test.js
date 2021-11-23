@@ -6,23 +6,24 @@ import compact from '../src/compact'
   Jos listalla vain yksi palautettava, ei palauta mitään.
  */
 
+
 test('removes falsys and nulls', () => {
-    expect(compact([null, 'a', false, '', 'b', 'c'])).toBe(['b', 'c']);
+    expect(compact([0, 1, 2, 3])).toMatchObject([1, 2, 3]);
 });
 
 test('removes falsys and nulls', () => {
-    expect(compact([null, '1', false, '', '2', '3'])).toBe(['2', '3']);
+    expect(compact([null, '1', false, '', '2', '3'])).toMatchObject(['1', '2', '3']);
 });
 
 test('removes falsys, emptys and nulls', () => {
-    expect(compact(['apple', 'orange', '', '', 'pear', null])).toBe(['orange', 'pear']);
+    expect(compact(['apple', 'orange', '', '', 'pear', null])).toMatchObject(['apple', 'orange', 'pear']);
 });
 
 test('removes falsys, emptys and nulls', () => {
-    expect(compact([false, false, '', 'one', '', 'two'])).toBe(['two']);
+    expect(compact([false, false, '', 'one', '', 'two'])).toMatchObject(['one','two']);
 });
 
-//test('removes falsys, emptys and nulls', () => {
-//    expect(compact(['', '', false, null, '1'])).toBe(['1']);
-//});
+test('removes falsys, emptys and nulls', () => {
+    expect(compact(['', '', false, null, '1'])).toMatchObject(['1']);
+});
 
