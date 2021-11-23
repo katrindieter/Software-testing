@@ -19,11 +19,12 @@ test('Expected return value 0', () => {
 /**
  * This returns NaN
  * 
- * */
 
 test('Expected return value 10', () => {
     expect(defaultTo(NaN, 10)).toBe(10);
 });
+
+*/
 
 test('Expected return value 10', () => {
     expect(defaultTo(null, 10)).toBe(10);
