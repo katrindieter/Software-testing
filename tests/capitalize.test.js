@@ -1,5 +1,11 @@
 import capitalize from '../src/capitalize'
 
+/*
+ * Nämä testit testaavat capitalize.js toimintaa. 
+ * Capitalize muuttaa parametrina saamansa merrkijonon
+ * ulkoasua niin, että ensimmäinen kirjain on isolla
+ * ja loput pienellä. 
+ */
 
 
 test('capitalize string FRED to Fred', () => {

@@ -1,5 +1,11 @@
 import add from '../src/add'
 
+/*
+ * Nämä testit testaavat add.js toimintaa. 
+ * Add.js saa parametrikseen kaksi lukua, 
+ * ja laskee ne yhteen. Se palauttaa näiden 
+ * lukujen summan. 
+ */
 
 
 test('adds 1 + 2, result is 3', () => {

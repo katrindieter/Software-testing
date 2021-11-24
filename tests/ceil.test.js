@@ -1,5 +1,11 @@
 import ceil from '../src/ceil'
 
+/* 
+ * Nämä testit testaavat ceil.js toimintaa. Ceil pyöristää
+ * parametrina annetun luvun toisen parametrin määrittämällä
+ * tarkkuudella ylöspäin. Jos toista parametria ei ole, 
+ * pyöristys tapahtuu kokonaisluvun tarkkuudella ylöspäin.
+ */ 
 
 
 test('rounds 4.006 with precision 0 to be 5', () => {

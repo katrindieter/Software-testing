@@ -1,8 +1,15 @@
 import camelCase from '../src/camelCase'
 
-/*  camelCase toimii muuten oletetusti, mutta
-    tulokseen tulostuu ylimääräinen välilyönti
-    sanan eteen.
+/* 
+ * Nämä testit testaavat camelCase.js toimintaa.
+ * camleCasen tarkoituksena on muuttaa parametrina saamaansa
+ * merkkijonoa niin, että kaikki sanat tulostetaan
+ * yhteen, ja ensimmäinen merkki on pienellä. Lisäksi jokaisen
+ * muun sanan ensimmäinen kirjain tulostetaan isolla.
+ * 
+ * camelCase toimii muuten oletetusti, mutta
+ * tulokseen tulostuu ylimääräinen tyhjä merkki
+ * palautettavan sanan eteen.
  */ 
 
 test('camelcases Ice cream to iceCream', () => {
