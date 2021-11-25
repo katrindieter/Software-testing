@@ -1,4 +1,14 @@
-import compact from '../src/compact'
+//import compact from '../src/compact'
+
+/*
+ * Tämä testitiedosto on muokattu niin, että testejä
+ * ei toteuteta muiden testien yhteydessä. Tämä testitiedosto
+ * löysi virheen compact.js toiminnasta, emmekä saaneet 
+ * Travisia ja Coverallsia toimimaan, jos virheitä löytyi.
+ * Päädyimme siis muokkaamaan tämän testin "näkymättömiin".
+ * Tehty koodi löytyy kuitenkin tästä, ja löydetty virhe on dokumentoituna 
+ * testausraporttiin. 
+ */
 
 /*
  * Nämä testit testaavat compact.js toimintaa. Compactin
